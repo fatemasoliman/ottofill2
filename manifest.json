@@ -2,8 +2,15 @@
   "manifest_version": 3,
   "name": "OttoFill",
   "version": "1.0",
-  "description": "Automatically fills form inputs based on URL parameters",
-  "permissions": ["activeTab", "scripting"],
+  "description": "",
+  "permissions": [
+    "activeTab",
+    "identity",
+    "storage"
+  ],
+  "host_permissions": [
+    "https://www.googleapis.com/"
+  ],
   "background": {
     "service_worker": "background.js"
   },
@@ -14,10 +21,10 @@
     }
   ],
   "action": {},
-  "web_accessible_resources": [
-    {
-      "resources": ["ottofill.html"],
-      "matches": ["<all_urls>"]
-    }
-  ]
+  "oauth2": {
+    "client_id": "1090398089996-410plnjkdup6iot1049qotlsmfieqlm8.apps.googleusercontent.com",
+    "scopes": [
+      "https://www.googleapis.com/auth/gmail.readonly"
+    ]
+  }
 }

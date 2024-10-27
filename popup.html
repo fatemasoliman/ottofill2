@@ -5,13 +5,15 @@
   <style>
     body { width: 300px; padding: 10px; }
     button { width: 100%; padding: 10px; margin-top: 10px; }
-    #status { margin-top: 10px; font-style: italic; }
+    #status, #emailStatus { margin-top: 10px; font-style: italic; }
   </style>
 </head>
 <body>
-
   <button id="triggerAutofill">Ottofill this page!</button>
   <p id="status"></p>
+  <button id="authenticateGmail">Authenticate Gmail</button>
+  <button id="getEmails">Get Recent Emails</button>
+  <p id="emailStatus"></p>
   <script src="popup.js"></script>
 </body>
 </html>
