@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "OttoFill",
+  "version": "1.0",
+  "description": "Automatically fills form inputs based on URL parameters",
+  "permissions": ["activeTab", "scripting"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ],
+  "action": {},
+  "web_accessible_resources": [
+    {
+      "resources": ["ottofill.html"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}
