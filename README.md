@@ -115,6 +115,3 @@ To modify the extension:
 - Added Gmail authentication and token management
 - Improved form field matching with fuzzy logic
 
-## License
-
-This project is provided as-is for educational and development purposes.
